@@ -48,7 +48,7 @@ console.log(trailer[0])
   return (
     <div>
 
-<button onClick={openModal} className='trailer-btn'>Play Trailer</button>
+<button onClick={openModal} className='trailer-btn' style={{backgroundColor:"dodgerblue",width:"200px",height:"5vh",color:"white",border:"none",transform:"scale(1.1)"}}>Play Trailer</button>
       <Modal
         isOpen={modalIsOpen}
         onAfterOpen={afterOpenModal}

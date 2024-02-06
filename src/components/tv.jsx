@@ -7,7 +7,7 @@ import "../styles/movie.css"
 const TV = () => {
 
     const [tvdetails, settvdetails] = useState([])
-    const getmovies = () => {
+    const gettvs = () => {
         try {
             fetch(`https://api.themoviedb.org/3/discover/tv?api_key=6dd7cdd83d25b83581564423ff0c4225`)
                 .then(res => res.json())
@@ -18,7 +18,7 @@ const TV = () => {
         }
     }
     useEffect(() => {
-        getmovies()
+        gettvs()
     }, [])
     return (
         <div className='moviedirection'>

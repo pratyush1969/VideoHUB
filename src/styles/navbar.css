@@ -13,4 +13,10 @@ transform:scale(1.2)
 span{
     color:red
 }
+.navbar-position{
+  position: sticky;
+  top:0;
+  left:0;
+  z-index: 99;
+}
     

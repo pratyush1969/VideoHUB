@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 import "../styles/navbar.css"
 const Navbarfinal = () => {
     return (
-        <Navbar expand="lg" className="bg-dark">
+        <Navbar expand="lg" className="bg-dark navbar-position">
             <Container className='bg-secondary'>
                 <Navbar.Brand href="#home">
                    Video<span>HUB</span></Navbar.Brand>

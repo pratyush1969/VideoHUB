@@ -18,7 +18,7 @@ const customStyles = {
 function Trailer({location}) {
     const [trailer,settrailer]=useState([])
   const showTrailer=()=>{
-    fetch(`https://api.themoviedb.org/3/movie/${location?.state?.movie?.id}/videos?api_key=6dd7cdd83d25b83581564423ff0c4225&language=en-US`)
+    fetch(`https://api.themoviedb.org/3/movie/${location.state.movie.id}/videos?api_key=6dd7cdd83d25b83581564423ff0c4225&language=en-US`)
     .then(res=>res.json())
     .then(data=>settrailer(data.results))
   }  

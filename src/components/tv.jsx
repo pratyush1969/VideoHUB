@@ -29,9 +29,9 @@ const TV = () => {
                         <Card style={{ width: '18rem',margin:"20px" }} key={i}>
                             <Card.Img variant="top" src={`https://image.tmdb.org/t/p/original${tv.backdrop_path}`} />
                             <Card.Body>
-                                <Card.Title>Title:- {tv.original_title}</Card.Title>
+                                <Card.Title>Title:- {tv.name}</Card.Title>
                                 <Card.Text>
-                                    Release:- {tv.release_date}
+                                    Release:- {tv.first_air_date}
                                 </Card.Text>
                                 <Card.Text>
                                     Rating:- {tv.vote_average}

@@ -9,23 +9,17 @@ const Tvdetails = () => {
   const location1 = useLocation()
   console.log(location1)
   return (
-    <div className='moviedetails-card'>
-
-    <Card style={{ width: '18rem' }}>
-      <Card.Img variant="top" src={`https://image.tmdb.org/t/p/original/${location1.state.tv?.poster_path}`} />
-      <Card.Body>
-        <Card.Title>Title:- {location1.state.tv?.name}</Card.Title>
-        <Card.Text>
-         Overview:- {location1.state.tv?.overview}
-        </Card.Text>
-      </Card.Body>
-      <ListGroup className="list-group-flush">
-        <ListGroup.Item>Release date:- {location1.state.tv?.first_air_date}</ListGroup.Item>
-        <ListGroup.Item>Original Language:- {location1.state.tv?.original_language}</ListGroup.Item>
-        <ListGroup.Item><Trailer1 location1={location1}/></ListGroup.Item>
-      </ListGroup>
-      
-    </Card>
+    <div className='destails-constainer'>
+      <div className="left">
+        <img src={`https://image.tmdb.org/t/p/original/${location1.state.tv?.poster_path}`} alt="" />
+      </div>
+      <div className="right">
+        <h3>Title :-{location1.state.tv?.name} </h3>
+        <p> Overview:- {location1.state.tv?.overview}</p>
+        <h4>Release date:- {location1.state.tv?.first_air_date}</h4>
+        <h5>Original Language:- {location1.state.tv?.original_language}</h5>
+        <button><Trailer1 location1={location1}/></button>
+      </div>
     </div>
   )
 }

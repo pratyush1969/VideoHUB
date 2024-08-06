@@ -8,7 +8,7 @@ const Navbarfinal = () => {
     return (
         <Navbar expand="lg" className="bg-dark navbar-position">
             <Container className='bg-secondary'>
-                <Navbar.Brand href="#home">
+                <Navbar.Brand>
                    Video<span>HUB</span></Navbar.Brand>
                 <Navbar.Toggle aria-controls="basic-navbar-nav" />
                 <Navbar.Collapse id="basic-navbar-nav">
